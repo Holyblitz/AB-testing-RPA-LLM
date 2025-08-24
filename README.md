@@ -4,17 +4,17 @@ README (checklist)
 
 objectifs & protocole (A/B/C)
 
-env local (Ollama + modèle léger, Playwright)
+env local (Ollama + modèle léger, Playwright install chromium)
 
-étapes pour reproduire (les commandes que tu as)
+étapes pour reproduire 
 
 limites & menaces à la validité
 
-pas de redistribution des datasets → liens officiels (WTTJ à scraper soi-même, FATURA2 via Zenodo)
+pas de redistribution des datasets → liens officiels (WTTJ à scraper soi-même, FATURA2 via Zenodo, dataset kaggle de mails)
 
 licence (MIT simple)
 
-2) Post LinkedIn (FR, sobre & nuancé)
+2) Post LinkedIn 
 
 RPA vs LLM (local) : ce que montrent nos tests A/B
 Contexte : machine locale (CPU/RAM limitée), 3 tâches réalistes.
@@ -25,23 +25,6 @@ Résultats (très courts)
 Conclusion : pour l’automatisation déterministe → RPA/Rules. Le LLM apporte de la valeur en prise de décision quand on borne les choix (candidats) ou pour normaliser. Le meilleur compromis est souvent Hybride (Rules → LLM sélecteur → Rules).
 Rapport & scripts (GitHub) en commentaire.
 (Contexte, limites et détails dans le README.)
-
-3) English version (if needed)
-
-RPA vs LLM (local): what our A/B tests show
-Local machine (CPU/RAM constrained), 3 realistic tasks.
-Results (short)
-• Web extraction: RPA > LLM (95.6% vs 20.4%, ~1.9s vs 60.7s median)
-• Email triage (50): Hybrid Rules+LLM = 98% (rules 96%, LLM 88%)
-• Invoices (50, free text): RPA wins on simple extraction; LLM is valuable as a selector/decision maker but weak as a raw extractor
-Takeaway: for deterministic automation → RPA/Rules. Use LLM for bounded decisions/normalization. Best pattern is Hybrid (Rules → LLM selector → Rules).
-Full report & code on GitHub (see comments).
-
-4) Petit rappel “licence & datasets”
-
-Mets une LICENCE MIT dans le repo.
-
-Ne versionne pas les données brutes (WTTJ pages, ZIP FATURA). Lien vers la source dans le README, pas de redistribution.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
