@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Outputs
+results/
+results_invoice/
+cache/
+*.png
+
+# Data (tiers/privées)
+data/fatura/
+data/urls.txt
+data/fatura_subset/items.jsonl
+data/fatura_subset/manual_gt.jsonl
+messages.csv
+
+# Playwright
+playwright/.cache/
